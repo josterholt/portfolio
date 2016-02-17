@@ -1,6 +1,23 @@
 import colorChanged from './signals/colorChanged';
 import rootRouted from './signals/rootRouted';
 import categoryChanged from './signals/categoryChanged';
+import Model from 'cerebral-model-baobab';
+
+const VisibleItems = Model.monkey({
+  cursors: {
+    items: ['items'],
+    ids: ['displayedItems', 'ids'],
+    selectedCategory: ['selectedCategory']
+  },
+  get(data) {
+    console.debug(data);
+    if(data.ids)
+    {
+      return data.ids.map((id) => data.items[id]);
+    }
+    return [];
+  }
+});
 
 export default (options = {}) => {
   return (module, controller) => {
@@ -8,19 +25,8 @@ export default (options = {}) => {
     module.state({
       title: 'Altered title',
       color: '#000',
-      selectedCategory: null,
-      displayedItems: function () {
-        console.debug(arguments);
-        return {
-          initialState: [],
-          lookupState: ['items'],
-          get(cerebral, lookupState, refs) {
-            return refs.map(function (ref) {
-              return lookupState.items[ref];
-            })
-          }
-        }
-      },
+      selectedCategory: '',
+      displayedItems: VisibleItems,
       items: {
         "item1": { 
           "title": "Item 1",
@@ -34,7 +40,6 @@ export default (options = {}) => {
         }
       }
     });
-    console.debug("testing");
 
     module.signals({
       rootRouted,

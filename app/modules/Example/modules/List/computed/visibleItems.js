@@ -6,7 +6,7 @@ export default function (get) {
 		let item = items[key];
 
 		return (
-			!filter || (filter in item.categories)
+			!filter || (item.categories.indexOf(filter) !== -1)
 		);
 	}).map(function (key) {
 		return items[key];
