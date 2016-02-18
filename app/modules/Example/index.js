@@ -1,5 +1,3 @@
-import colorChanged from './signals/colorChanged';
-import rootRouted from './signals/rootRouted';
 import categoryChanged from './signals/categoryChanged';
 import Model from 'cerebral-model-baobab';
 
@@ -10,7 +8,6 @@ const VisibleItems = Model.monkey({
     selectedCategory: ['selectedCategory']
   },
   get(data) {
-    console.debug(data);
     if(data.ids)
     {
       return data.ids.map((id) => data.items[id]);
@@ -28,12 +25,14 @@ export default (options = {}) => {
       selectedCategory: '',
       displayedItems: VisibleItems,
       items: {
-        "item1": { 
+        "item1": {
+          "id": 1,
           "title": "Item 1",
           "description": "Item 1 description 1234",
           "categories": ['Marketing', 'Sales']
         },
         "item2": {
+          "id": 2,
           "title": "Item 2",
           "description": "Item 2 Description 12345",
           "categories": ["Entertainment", "Hobby"]
@@ -42,8 +41,6 @@ export default (options = {}) => {
     });
 
     module.signals({
-      rootRouted,
-      colorChanged,
       categoryChanged,
     });
 

@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import { Decorator as Cerebral, Link } from 'cerebral-view-react';
-import Title from '../Title';
 import displayedItems from '../../modules/List/computed/visibleItems.js'
 
 @Cerebral({
@@ -31,20 +30,14 @@ class Home extends React.Component {
     }
 
     return (
-      <div>
-        <Title color={this.props.color}>{this.props.title}</Title>
-        
+      <div>       
         <select onChange={(e) => signals.categoryChanged({ category: e.target.value})}>
           <option>Marketing</option>
           <option>Hobby</option>
         </select>
-
-        <button onClick={() => signals.colorChanged({color: 'red'})}>Red</button>
-        {' | '}
-        <button onClick={() => signals.colorChanged({color: 'blue'})}>Blue</button>
         <ul>
         {this.props.displayedItems.map(function (item, index) {
-          return <li>{item.title}</li>
+          return <li key={item.id}>{item.title}</li>
         })}
         </ul>
       </div>
