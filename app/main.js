@@ -6,11 +6,15 @@ import Model from 'cerebral-model-baobab';
 import {Container} from 'cerebral-view-react';
 import Example from './modules/Example';
 import ItemList from './modules/Example/components/ItemList';
+import Http from 'cerebral-module-http';
 
 const controller = Controller(Model({}));
 
 controller.modules({
   example: Example(),
+  http: Http({
+  	baseUrl: '/api'
+  })
 });
 
 ReactDOM.render(<Container controller={controller}><ItemList /></Container>, document.getElementById('root'));
