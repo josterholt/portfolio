@@ -10,10 +10,10 @@ import Http from 'cerebral-module-http';
 
 const controller = Controller(Model({}));
 
-controller.modules({
+controller.addModules({
   example: Example(),
   http: Http({
-  	baseUrl: '/api'
+  	baseUrl: '/data'
   })
 });
 

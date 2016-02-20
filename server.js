@@ -10,6 +10,7 @@ var port = isDeveloping ? 3000 : process.env.PORT;
 var app = express();
 
 if (isDeveloping) {
+  console.info("Using development build");
   var compiler = webpack(config);
   var middleware = webpackMiddleware(compiler, {
     publicPath: config.output.publicPath,
@@ -31,10 +32,12 @@ if (isDeveloping) {
     res.end();
   });
 } else {
+  console.info("Using production build");
   app.use(express.static(__dirname + '/dist'));
   app.get('*', function response(req, res) {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
   });
+
 }
 
 app.listen(port, '0.0.0.0', function onStart(err) {

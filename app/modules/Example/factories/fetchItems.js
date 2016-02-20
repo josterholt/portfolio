@@ -3,8 +3,9 @@ import copy from 'cerebral-addons/copy'
 
 export default [
   [
-    httpGet('/items'), {
+    httpGet('/items.json'), {
       success: [
+        () => { console.debug("fetched"); },
         copy('input:/result', 'state:/items')
       ],
       error: [
