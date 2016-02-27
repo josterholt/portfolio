@@ -46,9 +46,20 @@ class Home extends React.Component {
       return component;
     }
 
+    function displayCode(snippet) {
+      if(snippet && snippet.code) {
+        var langClass = snippet.lang.toLowerCase();
+        return <pre className="code-snippet"><code className={langClass}>{snippet.code}</code></pre>          
+      }
+      return;
+    }
+
     return (
       <div>
         <div className="col-md-12">
+          <h1 style={{textAlign: "center"}}>Portfolio</h1>
+        </div>
+        <div className="col-md-12" style={{textAlign: "center"}}>
           <select onChange={(e) => signals.categoryChanged({ category: e.target.value})}>
             <option>Website</option>
             <option>Marketing</option>
@@ -78,6 +89,7 @@ class Home extends React.Component {
                   return <li><button type='button' className='btn btn-xs btn-success'>{role}</button></li>
                 })}</ul>
               </div>
+              {displayCode(item.codeSnippet)}              
             </li>
           })}
           </ul>

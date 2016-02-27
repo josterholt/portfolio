@@ -67,7 +67,7 @@
         "description": "",
         "roles": ["Developer", "Designer"],
         "technologies": ["PHP", "MySQL", "Drupal"],
-        "categories": ["Website"]
+        "categories": ["Website", "Hobby"]
     },
     {
         "id": 7,
@@ -79,7 +79,7 @@
         "description": "",
         "roles": ["Developer", "Designer"],
         "technologies": ["PHP", "MySQL", "Wordpress"],
-        "categories": ["Website"]
+        "categories": ["Website", "Hobby"]
     },
     {
         "id": 8,
@@ -91,7 +91,7 @@
         "description": "",
         "roles": ["Developer", "Designer"],
         "technologies": ["HTML", "JavaScript"],
-        "categories": ["Website"]
+        "categories": ["Website", "Hobby"]
     },
     {
         "id": 9,
@@ -130,6 +130,22 @@
         "technologies": ["AngularJS", "Touch/Swipe Support", "Embedded SVGs (HTML5)"],
         "categories": ["Website"]
     },
+    {
+        "id": 11,
+        "title": "Minecraft Fix Script",
+        "startYear": 2013,
+        "endYear": 2013,
+        "image": null,
+        "link": null,
+        "description": "",
+        "roles": [],
+        "technologies": ["PHP"],
+        "categories": ["Hobby"],
+        "codeSnippet": {
+            "lang": "PHP",
+            "code": "testFunc()"
+        }
+    },    
     {
         "id": 12,
         "title": "Govtech Event System",
