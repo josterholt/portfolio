@@ -8,19 +8,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/railscasts.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <style>
+<style>
     body {
       font-size: 16px;
+
+      color: #bebebe;
+      font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+
+      background: #333;
+      background: -webkit-linear-gradient(#333, #000); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#333, #000); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#333, #000); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#333, #000); /* Standard syntax */
+    }
+
+    h1, h2, h3 {
+        color: #e3e3e3;
+    }
+
+    a, a:hover {
+        color: #e6e6e6;
+    }
+
+    .btn-success {
+        color: #000;
+        font-weight: bold;
+    }
+
+    li img {
+        border: 1px solid #000;
+        -webkit-filter: grayscale(5%); /* Chrome, Safari, Opera */
+        filter: grayscale(5%);
+        transition-duratin: 1s;
+    }
+
+    li img:hover {
+        -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+        filter: grayscale(0%);        
+    }
+
+    li {
+        padding: 10px;
+    }
+    
+    li.active a::before {
+    	content: "[";
+    	//display: block;
+    }
+    
+    li a {
+		cursor: pointer;
+    }
+    
+    li.active a::after {
+    	content: "]";
+    	//display: block;
     }
 
     .border-separator > li:not(:last-child) {
-      border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #555;
     }
 
     .code-snippet {
-      padding: 0;
-      margin: 13px 0 13px 0;
-      border: 0;
+        padding: 0;
+        margin: 13px 0 13px 0;
+        border: 0;
+    }
+
+    select {
+        color: #000;
+        border: #000;
     }
     </style>
   </head>

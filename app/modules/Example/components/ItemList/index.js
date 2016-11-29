@@ -8,6 +8,7 @@ import HtmlToReact from 'html-to-react';
   color: ['example', 'color'],
   items: ['example', 'items'],
   selectedCategory: ['example', 'selectedCategory'],
+  selectedLanguage: ['example', 'selectedLanguage'],
   displayedItems: displayedItems
 })
 class Home extends React.Component {
@@ -20,9 +21,13 @@ class Home extends React.Component {
   render() {
     const signals = this.props.signals.example;
 
-    function generateImage(image) {
+    function generateImage(image, link) {
       if(image) {
-        return <div style={{textAlign: 'center'}}><img src={image} width="640" /></div>;
+        if(link) {
+          return <div style={{textAlign: 'center'}}><a href={link} target='_blank'><img src={image} width="640" /></a></div>;
+        } else {
+          return <div style={{textAlign: 'center'}}><img src={image} width="640" /></div>;
+        }
       }
     }
 
@@ -54,27 +59,35 @@ class Home extends React.Component {
       return;
     }
 
+    function getHeader(item) {
+      if(item.link) {
+          return (<a href={item.link} target='_blank'>{item.title}</a>);
+      }
+      return (item.title);
+    }
+
+    console.log("foo");
+    console.log(this.props.selectedLanguage);
     return (
       <div>
-        <div className="col-md-12">
-          <h1 style={{textAlign: "center"}}>Portfolio</h1>
-        </div>
         <div className="col-md-12" style={{textAlign: "center"}}>
-          <select onChange={(e) => signals.categoryChanged({ category: e.target.value})}>
-            <option>Website</option>
-            <option>Marketing</option>
-            <option>Hobby</option>
-          </select>
+        	<ul className="list-unstyled list-inline">
+    			<li className={this.props.selectedLanguage == null ? 'active': null }><a onClick={() => signals.languageChanged({ language: null})}>All</a></li>
+        		<li className={this.props.selectedLanguage == "PHP" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "PHP"})}>PHP</a></li>
+        		<li className={this.props.selectedLanguage == "PYTHON" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "PYTHON"})}>Python</a></li>
+        		<li className={this.props.selectedLanguage == "JAVA" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "JAVA"})}>Java</a></li>
+        		<li className={this.props.selectedLanguage == "C++" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "C++"})}>C++</a></li>
+        		<li className={this.props.selectedLanguage == "C#" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "C#"})}>C#</a></li>
+    		</ul>
         </div>
 
         <div className="col-md-12">
           <ul className="list-unstyled border-separator">
           {this.props.displayedItems.map(function (item, index) {
             return <li key={item.id}>
-              <h3 style={{textAlign: 'center'}}>{item.title}</h3>
+              <h3 style={{textAlign: 'center'}}>{getHeader(item)}</h3>
               <div style={{textAlign: 'center' }}>{item.startYear} - {displayEndYear(item.endYear)}</div>
-              {displayLink(item.link)}
-              {generateImage(item.image)}
+              {generateImage(item.image, item.link)}
               <strong>Description:</strong>
               <div>{displayDescription(item.description)}</div>
               <div style={{marginBottom: '10px', marginTop: '10px'}}>
