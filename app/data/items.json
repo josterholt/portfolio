@@ -3,8 +3,9 @@
         "id": 1,
         "title": "CRM",
         "startYear": 2014,
-        "endYear": null,
-        "description": "Customer Relationship Management system server and client solution built on Ignition platform. In addition to providing customer account and contact information, CRM is responsible for a number of key business activities including sales orders, credit card processing, employee management, and certification management.",
+        "endYear": 2016,
+        "description": "Customer Relationship Management solution. Consists of Java based desktop application and server built on the Ignition Platform. Allows staff to manage customers and associated information, place orders include credit card processing, employee management, and training and certification management. Many other services communicate with CRM through webservices to retrieve and write data.",
+        "technicalDescription": "",
         "roles": ["Lead Developer"],
         "technologies": ["Ignition", "Java", "Jython"],
         "categories": ["Website", "Marketing", "Sales"]
@@ -30,7 +31,7 @@
         "link": "https://inductiveuniversity.com/",
         "description": "Education-oriented media website built on Python/Django and Elasticsearch. Implemented course progress widgets, SQL queries, and Elasticsearch aggregation function. Advised on technical implementation of database schema, website infrastructure, and programming practices.",
         "roles": ["Senior Developer"],
-        "technologies": ["Python", "Django", "MySQL"],
+        "technologies": ["Python", "Django", "MySQL", "AWS"],
         "categories": ["Website"]
     },
     {
@@ -52,9 +53,9 @@
         "endYear": null,
         "image": null,
         "link": null,
-        "description": "There are various applications or extensions needed internally to address business needs so that staff throughout the company can efficiently fulfill their duties.<br /><u>Zimbra Plugin</u><br />Javascript widget with Java backend extension of Zimbra email system allowing contacts to be associated to accounts in the internal customer database by sales representatives.<br /><u>Quickbooks Java Module</u><br />Ignition module that synchronizes data between CRM system and Quickbooks for accounting purposes. <br /><u>Services Downtime Notification System</u><br />An Ignition project that notifies staff when a website or service is down. This utilizes the notification feature that is a part of the Ignition platform.",
+        "description": "There are various applications or extensions needed internally to address business needs so that staff throughout the company can efficiently fulfill their duties.<br /><br /><u>Zimbra Plugin</u><br />Javascript widget with Java backend extension of Zimbra email system allowing contacts to be associated to accounts in the internal customer database by sales representatives.<br /><br /><u>Quickbooks Java Module</u><br />Ignition module that synchronizes data between CRM system and Quickbooks for accounting purposes. <br /><br /><u>Services Downtime Notification System</u><br />An Ignition project that notifies staff when a website or service is down. This utilizes the notification feature that is a part of the Ignition platform.",
         "roles": ["Project Lead"],
-        "technologies": ["Ignition", "Java", "SOAP"],
+        "technologies": ["Ignition", "Java", "Jython", "SOAP"],
         "categories": ["Application"]
     },
     {
@@ -64,7 +65,8 @@
         "endYear": null,
         "image": "http://codersdesiderata.com/files/2016/01/2016-01-14_06h28_45.png",
         "link": "http://www.taurenthinktank.com/",
-        "description": "",
+        "description": "Website for weekly Blizzard games fan podcast. Allows users to play Youtube and audio only version of episodes from website.",
+        "technicalDescription": "This is a pretty standard blog style website. In place of blog posts there are podcast episodes. Pulling in the episodes and Youtube content is through an update script that first pulls in the podcast episode through libsyn, and then retrieves the associated Youtube video using the Youtube API.",
         "roles": ["Developer", "Designer"],
         "technologies": ["PHP", "MySQL", "Drupal"],
         "categories": ["Website", "Hobby"]
@@ -76,7 +78,7 @@
         "endYear": 2014,
         "image": "http://codersdesiderata.com/files/2016/01/2016-01-14_06h33_51.png",
         "link": "http://www.becauseofwow.com/",
-        "description": "",
+        "description": "World of Warcraft fan site that highlights fan based content regarding how World of Warcraft has positively affected their lives through friendship and life events. Displays user submitted stories and social media posts with #becauseofwow.",
         "roles": ["Developer", "Designer"],
         "technologies": ["PHP", "MySQL", "Wordpress"],
         "categories": ["Website", "Hobby"]
@@ -84,11 +86,11 @@
     {
         "id": 8,
         "title": "Well Played Party",
-        "startYear": 2015,
+        "startYear": 2014,
         "endYear": null,
         "image": "http://codersdesiderata.com/files/2016/01/2016-01-14_06h35_17.png",
         "link": "http://www.wellplayedparty.com/",
-        "description": "",
+        "description": "Event website for Blizzard game fan community. Prime purpose is to supply information for the annually held Well Played Party at BlizzCon.",
         "roles": ["Developer", "Designer"],
         "technologies": ["HTML", "JavaScript"],
         "categories": ["Website", "Hobby"]
@@ -295,9 +297,10 @@
         "title": "RPG Slots",
         "startYear": 2016,
         "endYear": null,
-        "image": null,
+        "image": "http://codersdesiderata.com/files/2016/09/rpgslots.png",
         "link": null,
-        "description": "Slots with an RPG twist.",
+        "description": "Three reel slots game with horizontal and adjacent matching. Includes on-click spin start and score that persists across play sessions. ",
+        "technicalDescription": "Written in C++ using the Cocos2d framework. Custom code handles the spinning of each individual reel, stopping the reels at a given row, and processing matches and scoring.",
         "roles": [],
         "technologies": ["C++", "Cocos2d"],
         "categories": ["Application", "Hobby"]
@@ -309,19 +312,21 @@
         "endYear": null,
         "image": null,
         "link": null,
-        "description": "Adventure-puzzler RPG game.",
+        "description": "Adventure-puzzler RPG game that combines real-time action combat and puzzle elements that take place through outdoor environmental terrain and dungeon chambers. Support a two-player mode with a authoritarian server that manages state integrity and events. Implements a custom event management system that can be managed through Tiled map editing software.",
+        "technicalDescription": "In it's current implementation, the game client is built with Phaser.JS and runs in the browser. Communication with the server is accomplished through websockets. The server was originally a Python based websockets server using Tornado websocket server, but was later ported to C++ with the libwebsockets library to utilize multithreading.\n\nA custom event system was implemented to handle environmental triggers that involve either the player or another environmental object interacting with triggers. When a trigger is activated, an event is triggered which will alter game state.",
         "roles": [],
-        "technologies": ["C++", "Cocos2d"],
+        "technologies": ["C++", "JavaScript", "HTML5", "PhaserJS"],
         "categories": ["Application", "Hobby"]
     },
     {
         "id": 26,
-        "title": "Moduleshowcase",
+        "title": "Module Showcase",
         "startYear": 2016,
         "endYear": null,
-        "image": null,
-        "link": null,
-        "description": "Revamp of moduleshowcase, a web app that displays third-party modules for the Ignition Platform.",
+        "image": "http://codersdesiderata.com/files/2017/01/moduleshowcase.png",
+        "link": "https://inductiveautomation.com/moduleshowcase/",
+        "description": "Search based web app that allows users to find third-party modules for the Ignition platform. Search includes text search and category filters, as well as sorting options.",
+        "technicalDescription": "Uses React.js and Cerebral.js for client side functionality. All search, filtering, and sorting is executed client-side through the Cerebral.js framework. Django provides a restful interface to provide the module data and allows integrator application submissions.",
         "roles": [],
         "technologies": ["Javascript", "Reactjs"],
         "categories": ["Website"]
@@ -331,11 +336,12 @@
         "title": "Inductive Automation",
         "startYear": 2016,
         "endYear": null,
-        "image": null,
+        "image": "http://codersdesiderata.com/files/2017/01/inductive_automation.png",
         "link": "https://www.inductiveautomation.com",
-        "description": "Maintenance and feature development",
+        "description": "Multi-purpose corporate website that serves as an entry point for Inductive Automation, Ignition products, services, and community. Some sections rely on external web services to obtain and record data.",
+        "technicalDescription": "Over time there have been a series of projects that entail the fullstack, including modifying the database for new content, Python/Django coding for new pages and web services, and HTML/CSS coding for new pages and styling. This website is oriented to marketing, so appearance and responsiveness for tablet and mobile have been a focus.",
         "roles": ["Web Developer"],
-        "technologies": ["Javascript", "Python", "Ignition"],
+        "technologies": ["Javascript", "Python", "Django", "Ignition", "AWS", "Memcache"],
         "categories": ["Website"]
     },
     {
@@ -343,11 +349,12 @@
         "title": "Ignition Community Conference",
         "startYear": 2016,
         "endYear": null,
-        "image": null,
+        "image": "http://codersdesiderata.com/files/2017/01/icc_registration.png",
         "link": "https://icc.inductiveautomation.com",
-        "description": "Ignition Community Conference allows users to purchase tickets and workshops for the ICC event, as well as register for the workshops they want to attend.",
+        "description": "The Ignition Community Conference website allows users to purchase and manage tickets and workshops for the annual Ignition Community Conference event. Includes discount system for purchasing tickets early, additional tickets, and bulk purchases. Allows attendees to manage their profile information for the event.",
+        "technicalDescription": "This was a pretty typical ecommerce solution allowing web users to securely order tickets and workshops online with varying quantities and pricing based on the date and quantity. Peak traffic was not pressing so a basic mySQL setup with Python/Django was sufficient.\n There were some challenging areas, such as syncing orders with the internal CRM. The primary issue was safely associating orders to existing accounts and contacts without compromising data integrity or generating duplicate account and contact records. Special checks on user generated data were put in place to achieve this, and tools were added to the CRM to merge any duplicates that were unable to be verified when the order was placed.",
         "roles": ["Web Developer"],
-        "technologies": ["Javascript", "Python", "Ignition"],
+        "technologies": ["Javascript", "Python", "Ignition", "AWS"],
         "categories": ["Website"]
     },
     {
@@ -397,5 +404,29 @@
         "roles": [],
         "technologies": ["Android", "Unity", "C#"],
         "categories": ["Application", "Game Development"]
+    },
+    {
+        "id": 33,
+        "title": "React Integrator Search",
+        "startYear": 2016,
+        "endYear": 2017,
+        "image": "http://codersdesiderata.com/files/2017/01/integrator_search.png",
+        "link": null,
+        "description": "React based web app that allows users to search for integrators, filtering by account name, location proximity, and certification level. Interfaces with CRM and utilizes Google Maps and Geolocation apis.",
+        "roles": ["Technical Lead"],
+        "technologies": ["JavaScript", "React", "Cerebral"],
+        "categories": ["Website"]
+    },
+    {
+        "id": 34,
+        "title": "Unity Object Inspect",
+        "startYear": 2016,
+        "endYear": 2016,
+        "image": null,
+        "link": null,
+        "description": "Coded feature to allow user to inspect an object on click. Created during a 48 hour game jam for local Game Development meetup group.",
+        "roles": [],
+        "technologies": ["Unity", "C#"],
+        "categories": ["Game Development"]
     }
 ]

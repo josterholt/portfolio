@@ -24,9 +24,9 @@ class Home extends React.Component {
     function generateImage(image, link) {
       if(image) {
         if(link) {
-          return <div style={{textAlign: 'center'}}><a href={link} target='_blank'><img src={image} width="640" /></a></div>;
+          return <div className="post-image"><a href={link} target='_blank'><img src={image} width="640" /></a></div>;
         } else {
-          return <div style={{textAlign: 'center'}}><img src={image} width="640" /></div>;
+          return <div className="post-image"><img src={image} width="640" /></div>;
         }
       }
     }
@@ -45,9 +45,14 @@ class Home extends React.Component {
       return;
     }
 
-    function displayDescription(description) {
+    function displayDescription(heading, description, style) {
       var parser = new HtmlToReact.Parser(React);
-      var component = parser.parse("<div>" + description + "</div>")
+      if(description == undefined) {
+          return null;
+      }
+
+      let heading_comp = <strong>{heading}:</strong>      
+      var component = <div style={style}>{heading_comp} {parser.parse("<div>" + description + "</div>")}</div>
       return component;
     }
 
@@ -66,19 +71,17 @@ class Home extends React.Component {
       return (item.title);
     }
 
-    console.log("foo");
-    console.log(this.props.selectedLanguage);
     return (
       <div>
         <div className="col-md-12" style={{textAlign: "center"}}>
-        	<ul className="list-unstyled list-inline">
-    			<li className={this.props.selectedLanguage == null ? 'active': null }><a onClick={() => signals.languageChanged({ language: null})}>All</a></li>
+        	<ul id="category-menu" className="list-unstyled list-inline">
+    			  <li className={this.props.selectedLanguage == null ? 'active': null }><a onClick={() => signals.languageChanged({ language: null})}>All</a></li>
         		<li className={this.props.selectedLanguage == "PHP" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "PHP"})}>PHP</a></li>
         		<li className={this.props.selectedLanguage == "PYTHON" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "PYTHON"})}>Python</a></li>
         		<li className={this.props.selectedLanguage == "JAVA" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "JAVA"})}>Java</a></li>
         		<li className={this.props.selectedLanguage == "C++" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "C++"})}>C++</a></li>
         		<li className={this.props.selectedLanguage == "C#" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "C#"})}>C#</a></li>
-    		</ul>
+    		  </ul>
         </div>
 
         <div className="col-md-12">
@@ -88,8 +91,8 @@ class Home extends React.Component {
               <h3 style={{textAlign: 'center'}}>{getHeader(item)}</h3>
               <div style={{textAlign: 'center' }}>{item.startYear} - {displayEndYear(item.endYear)}</div>
               {generateImage(item.image, item.link)}
-              <strong>Description:</strong>
-              <div>{displayDescription(item.description)}</div>
+              {displayDescription('Description', item.description, {marginBottom: '10px', marginTop: '10px'})}
+              {displayDescription('Technical Description', item.technicalDescription)}
               <div style={{marginBottom: '10px', marginTop: '10px'}}>
                 <strong>Technologies:</strong>&nbsp;
                 <ul className="list-inline" style={{display: 'inline-block'}}>{item.technologies.map(function (tech) {
