@@ -84,6 +84,23 @@ class Home extends React.Component {
     		  </ul>
         </div>
 
+        <div className="col-md-12" style={{textAlign: "center"}}>
+        	<ul id="category-menu" className="list-unstyled list-inline">
+    			  <li className={this.props.selectedCategory == null ? 'active': null }><a onClick={() => signals.categoryChanged({ category: null})}>All</a></li>
+        		<li className={this.props.selectedCategory == "Website" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "Website"})}>Web</a></li>
+        		<li className={this.props.selectedCategory == "Application" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "Application"})}>Applications</a></li>
+        		<li className={this.props.selectedCategory == "GameDev" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "GameDev"})}>Game Development</a></li>
+    		  </ul>
+        </div>
+
+        <div>
+          <p>I am an experienced full stack software engineer with 15 years experience, fluent in a variety of compiled and interpreted languages (Python, PHP, JavaScript, Java, and C++).</p>
+
+          <p>I build and maintain web and native applications from the ground up, starting from the server or client OS, up through the database and code. I have created web and native apps for desktop, tablet, and mobile under a variety of verticals, including marketing, eCommerce, real estate, and publishing.</p>
+
+          <p>My code is clean, efficient, practical, human readable, and tested. I use object oriented programming and design patterns. I avoid premature optimization, and engineer my classes and components so that they are extensible and scale. I use stable and proven frameworks and libraries when using them makes sense and benefits the project.</p>
+        </div>
+
         <div className="col-md-12">
           <ul className="list-unstyled border-separator">
           {this.props.displayedItems.map(function (item, index) {
