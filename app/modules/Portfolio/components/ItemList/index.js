@@ -108,7 +108,7 @@ class Home extends React.Component {
           <ul className="list-unstyled border-separator">
           {this.props.displayedItems.map(function (item, index) {
             return <li key={item.id} className="card">
-              <h3 style={{textAlign: 'center'}}>{getHeader(item)}</h3>
+              <h2 style={{textAlign: 'center'}}>{getHeader(item)}</h2>
               <div style={{textAlign: 'center' }}>{item.startYear} - {displayEndYear(item.endYear)}</div>
               {generateImage(item.image, item.link)}
 
