@@ -4,14 +4,14 @@ import Router from 'cerebral-module-router';
 import Controller from 'cerebral';
 import Model from 'cerebral-model-baobab';
 import {Container} from 'cerebral-view-react';
-import Example from './modules/Example';
-import ItemList from './modules/Example/components/ItemList';
+import Portfolio from './modules/Portfolio';
+import ItemList from './modules/Portfolio/components/ItemList';
 import Http from 'cerebral-module-http';
 
 const controller = Controller(Model({}));
 
 controller.addModules({
-  example: Example(),
+  example: Portfolio(),
   http: Http({
   	baseUrl: '/data'
   })
