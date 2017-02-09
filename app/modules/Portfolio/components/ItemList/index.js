@@ -29,6 +29,7 @@ class Home extends React.Component {
           return <div className="post-image"><img src={image} width="640" /></div>;
         }
       }
+      return <div className="no-sample-image"></div>
     }
 
     function displayEndYear(endYear) {
@@ -110,9 +111,14 @@ class Home extends React.Component {
               <h3 style={{textAlign: 'center'}}>{getHeader(item)}</h3>
               <div style={{textAlign: 'center' }}>{item.startYear} - {displayEndYear(item.endYear)}</div>
               {generateImage(item.image, item.link)}
-              {displayDescription('Description', item.description, {marginBottom: '25px'})}
-              {displayDescription('Technical Description', item.technicalDescription, {marginBottom: '25px'})}
-              {displayCode(item.codeSnippet)}              
+
+              <div className="descriptions">
+                {displayDescription('Description', item.description, {marginBottom: '25px'})}
+                {displayDescription('Technical Description', item.technicalDescription, {marginBottom: '25px'})}
+              </div>
+
+              {displayCode(item.codeSnippet)}
+
               <div className="skillset-labels-container">
                 <div className="skillset-labels technologies">
                   <strong>Technologies:</strong>&nbsp;
