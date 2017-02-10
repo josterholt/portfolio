@@ -34,7 +34,7 @@ class Home extends React.Component {
 
     function displayEndYear(endYear) {
       if(!endYear) {
-        return 'Present';
+        return 'PRESENT';
       }
       return endYear;
     }
@@ -48,7 +48,7 @@ class Home extends React.Component {
 
     function displayDescription(heading, description, style) {
       var parser = new HtmlToReact.Parser(React);
-      if(description == undefined) {
+      if(description == undefined || description == "") {
           return null;
       }
 
@@ -99,7 +99,7 @@ class Home extends React.Component {
               <li className={this.props.selectedCategory == null ? 'active': null }><a onClick={() => signals.categoryChanged({ category: null})}>All</a></li>
               <li className={this.props.selectedCategory == "Website" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "Website"})}>Web</a></li>
               <li className={this.props.selectedCategory == "Application" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "Application"})}>Applications</a></li>
-              <li className={this.props.selectedCategory == "GameDev" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "GameDev"})}>Game Development</a></li>
+              <li className={this.props.selectedCategory == "GameDev" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "GameDev"})}>Game</a></li>
             </ul>
           </div>
         </div>
@@ -109,7 +109,7 @@ class Home extends React.Component {
           {this.props.displayedItems.map(function (item, index) {
             return <li key={item.id} className="card">
               <h2 style={{textAlign: 'center'}}>{getHeader(item)}</h2>
-              <div style={{textAlign: 'center' }}>{item.startYear} - {displayEndYear(item.endYear)}</div>
+              <div className="date-range">{item.startYear} - {displayEndYear(item.endYear)}</div>
               {generateImage(item.image, item.link)}
 
               <div className="descriptions">
