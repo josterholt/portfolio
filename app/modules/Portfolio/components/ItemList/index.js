@@ -74,13 +74,13 @@ class Home extends React.Component {
 
         // <div className="col-md-12" style={{textAlign: "center"}}>
         // 	<ul id="category-menu" className="list-unstyled list-inline">
-    		// 	  <li className={this.props.selectedLanguage == null ? 'active': null }><a onClick={() => signals.languageChanged({ language: null})}>All</a></li>
+        // 	  <li className={this.props.selectedLanguage == null ? 'active': null }><a onClick={() => signals.languageChanged({ language: null})}>All</a></li>
         // 		<li className={this.props.selectedLanguage == "PHP" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "PHP"})}>PHP</a></li>
         // 		<li className={this.props.selectedLanguage == "PYTHON" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "PYTHON"})}>Python</a></li>
         // 		<li className={this.props.selectedLanguage == "JAVA" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "JAVA"})}>Java</a></li>
         // 		<li className={this.props.selectedLanguage == "C++" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "C++"})}>C++</a></li>
         // 		<li className={this.props.selectedLanguage == "C#" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "C#"})}>C#</a></li>
-    		//   </ul>
+        //   </ul>
         // </div>
 
         // <div className="col-md-12 introduction">
@@ -108,29 +108,33 @@ class Home extends React.Component {
           <ul className="list-unstyled border-separator">
           {this.props.displayedItems.map(function (item, index) {
             return <li key={item.id} className="card">
-              <h2 style={{textAlign: 'center'}}>{getHeader(item)}</h2>
-              <div className="date-range">{item.startYear} - {displayEndYear(item.endYear)}</div>
-              {generateImage(item.image, item.link)}
+              <div className="main-content">                
+                <h2 style={{textAlign: 'center'}}>{getHeader(item)}</h2>
+                <div className="date-range">{item.startYear} - {displayEndYear(item.endYear)}</div>
 
-              <div className="descriptions">
-                {displayDescription('Description', item.description, {marginBottom: '25px'})}
-                {displayDescription('Technical Description', item.technicalDescription, {marginBottom: '25px'})}
-              </div>
+                    {generateImage(item.image, item.link)}
 
-              {displayCode(item.codeSnippet)}
+                    <div className="descriptions">
+                        {displayDescription('Description', item.description, {marginBottom: '25px'})}
+                        {displayDescription('Technical Description', item.technicalDescription, {marginBottom: '25px'})}
+                    </div>
 
-              <div className="skillset-labels-container">
-                <div className="skillset-labels technologies">
-                  <strong>Technologies:</strong>&nbsp;
-                  <ul className="list-inline" style={{display: 'inline-block'}}>{item.technologies.map(function (tech) {
-                    return <li><button type='button' className='btn btn-xs btn-success'>{tech}</button></li>
-                  })}</ul>
-                </div>
-                <div className="skillset-labels roles">
-                  <strong>Roles:</strong>&nbsp;
-                  <ul className="list-inline" style={{display: 'inline-block'}}>{item.roles.map(function (role) {
-                    return <li><button type='button' className='btn btn-xs btn-success'>{role}</button></li>
-                  })}</ul>
+                    {displayCode(item.codeSnippet)}
+
+
+                <div className="skillset-labels-container">
+                    <div className="skillset-labels technologies">
+                    <strong>Technologies:</strong>&nbsp;
+                    <ul className="list-inline" style={{display: 'inline-block'}}>{item.technologies.map(function (tech) {
+                        return <li><button type='button' className='btn btn-xs btn-success'>{tech}</button></li>
+                    })}</ul>
+                    </div>
+                    <div className="skillset-labels roles">
+                    <strong>Roles:</strong>&nbsp;
+                    <ul className="list-inline" style={{display: 'inline-block'}}>{item.roles.map(function (role) {
+                        return <li><button type='button' className='btn btn-xs btn-success'>{role}</button></li>
+                    })}</ul>
+                    </div>
                 </div>
                 <div style={{ clear: 'both'}}></div>
               </div>
