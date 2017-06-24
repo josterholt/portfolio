@@ -95,7 +95,9 @@
     .filters li {
         padding-left: 0px;
         padding-right: 0px;
-        text-transform: uppercase;        
+        text-transform: uppercase;
+        font-size: 1.125em;
+        letter-spacing: 0.07em;
     }
 
     .filters li:before, .filters li:after {
@@ -104,20 +106,21 @@
 
     .filters li.active::before {
     	content: "[";
-    	color: blue;
+    	color: #eee;
     }
     
     .filters li.active::after {
     	content: "]";
-    	color: blue;
+    	color: #eee;
     }
 
     .filters li a {
 		cursor: pointer;
+        color: #ccc;
     }
 
     .filters li.active a {
-        color: yellow;
+        color: #fff;
     }
 
     .filters li.active a:hover {

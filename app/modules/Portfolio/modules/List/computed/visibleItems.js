@@ -9,6 +9,10 @@ export default function (get) {
 
 	return Object.keys(items).filter(function (key) {
 		let item = items[key];
+
+		if(item.show == false) {
+			return false;
+		}
 		
 		let tech_matches = false;
 		let category_matches = false;

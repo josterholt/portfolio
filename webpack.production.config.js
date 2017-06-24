@@ -4,7 +4,6 @@ var path = require('path');
 var webpack = require('webpack');
 
 var config = {
-  devtool: "#inline-source-map",
   entry: [
     path.join(__dirname, 'app/main.js')
   ],
@@ -53,10 +52,8 @@ if (process.env.HOT) {
     ]);
 }
 
-if (process.env.NODE_ENV === 'production') {
-  config.plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
-  config.plugins.push(new webpack.optimize.UglifyJsPlugin());
-}
+config.plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
+config.plugins.push(new webpack.optimize.UglifyJsPlugin());
 
 
 module.exports = config;

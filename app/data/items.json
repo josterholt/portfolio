@@ -9,7 +9,8 @@
         "roles": ["Lead Developer"],
         "technologies": ["Ignition", "Java", "Jython"],
         "categories": ["Website", "Marketing", "Sales"],
-        "priority": 1
+        "priority": 1,
+        "show": 1
     },
     {
         "id": 2,
@@ -22,7 +23,8 @@
         "roles": ["Lead Developer"],
         "technologies": ["Python", "Django", "MySQL"],
         "categories": ["Website"],
-        "priority": 1
+        "priority": 1,
+        "show": 1
     },
     {
         "id": 3,
@@ -35,7 +37,8 @@
         "roles": ["Senior Developer"],
         "technologies": ["Python", "Django", "MySQL", "AWS"],
         "categories": ["Website"],
-        "priority": 1
+        "priority": 1,
+        "show": 1
     },
     {
         "id": 4,
@@ -48,7 +51,8 @@
         "roles": ["Project Lead"],
         "technologies": ["PHP", "Kayako"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 5,
@@ -61,7 +65,8 @@
         "roles": ["Project Lead"],
         "technologies": ["Ignition", "Java", "Jython", "SOAP"],
         "categories": ["Application"],
-        "priority": 2
+        "priority": 2,
+        "show": 1
     },
     {
         "id": 6,
@@ -75,7 +80,8 @@
         "roles": ["Developer", "Designer"],
         "technologies": ["PHP", "MySQL", "Drupal"],
         "categories": ["Website", "Hobby"],
-        "priority": 5
+        "priority": 5,
+        "show": 1
     },
     {
         "id": 7,
@@ -88,7 +94,8 @@
         "roles": ["Developer", "Designer"],
         "technologies": ["PHP", "MySQL", "Wordpress"],
         "categories": ["Website", "Hobby"],
-        "priority": 5
+        "priority": 5,
+        "show": 1
     },
     {
         "id": 8,
@@ -101,7 +108,8 @@
         "roles": ["Developer", "Designer"],
         "technologies": ["HTML", "JavaScript"],
         "categories": ["Website", "Hobby"],
-        "priority": 5
+        "priority": 5,
+        "show": 1
     },
     {
         "id": 9,
@@ -115,7 +123,8 @@
         "technologies": ["PHP", "APC", "Doctrine 2", "Custom API"],
         "concepts": ["MVC", "S.O.L.I.D", "Namespaces", "RESTful Interface", "Reflection", "Annotation", "Magic Methods"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 10,
@@ -128,7 +137,8 @@
         "roles": ["Senior Programmer"],
         "technologies": ["Android", "iOS", "PhoneGap", "AngularJS"],
         "categories": ["Website", "Application"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 11,
@@ -141,7 +151,8 @@
         "roles": ["Technical Lead"],
         "technologies": ["AngularJS", "Touch/Swipe Support", "Embedded SVGs (HTML5)"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 11,
@@ -154,7 +165,8 @@
         "roles": [],
         "technologies": ["PHP"],
         "categories": ["Hobby"],
-        "priority": 5
+        "priority": 5,
+        "show": 1
     },    
     {
         "id": 12,
@@ -167,7 +179,8 @@
         "roles": ["Research/Development"],
         "technologies": ["Salesforce", "VisualForce/Apex", "JavaScript"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 13,
@@ -180,7 +193,8 @@
         "roles": ["Lead Developer"],
         "technologies": ["PHP", "MySQL", "jQuery UI", "AJAX"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 14,
@@ -193,7 +207,8 @@
         "roles": ["Senior Developer"],
         "technologies": ["Clickability", "Velocity", "PHP", "mySQL", "JavaScript"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 15,
@@ -206,7 +221,8 @@
         "roles": ["Developer"],
         "technologies": ["JavaScript", "Velocity", "Eloqua", "AJAX", "JSON"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 16,
@@ -219,7 +235,8 @@
         "roles": ["Developer"],
         "technologies": ["PHP", "mySQL", "JavaScript"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 17,
@@ -232,7 +249,8 @@
         "roles": ["Developer"],
         "technologies": ["PHP", "Authorize.net", "JavaScript", "Eloqua"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 18,
@@ -245,7 +263,8 @@
         "roles": ["Developer"],
         "technologies": ["PHP", "JavaScript", "mySQL"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 19,
@@ -258,7 +277,8 @@
         "roles": ["Lead Developer"],
         "technologies": ["ASP", "ASP.net", "ActionScript", "Flash", "Windows Server 2003", "MSSQL"],
         "categories": ["Website"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 20,
@@ -271,7 +291,8 @@
         "roles": ["Lead Developer"],
         "technologies": ["Visual Basic", "ActiveX", "mySQL", "PHP"],
         "categories": ["Website", "Application"],
-        "priority": 4
+        "priority": 4,
+        "show": 1
     },
     {
         "id": 21,
@@ -285,7 +306,8 @@
         "roles": [],
         "technologies": ["Node", "Express", "MongoDB", "Heroku"],
         "categories": ["Website", "Hobby"],
-        "priority": 4
+        "priority": 4,
+        "show": 1
     },
     {
         "id": 22,
@@ -298,7 +320,8 @@
         "roles": [],
         "technologies": ["Java", "MySQL", "Spring"],
         "categories": ["Website", "Hobby"],
-        "priority": 4
+        "priority": 4,
+        "show": 1
     },
     {
         "id": 23,
@@ -311,7 +334,8 @@
         "roles": [],
         "technologies": ["QT", "C++", "SQLite"],
         "categories": ["Application", "Hobby"],
-        "priority": 5
+        "priority": 5,
+        "show": 1
     },
     {
         "id": 24,
@@ -325,21 +349,23 @@
         "roles": [],
         "technologies": ["C++", "Cocos2d"],
         "categories": ["Application", "Hobby", "GameDev"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 25,
         "title": "Out of Phase",
         "startYear": 2015,
         "endYear": null,
-        "image": null,
+        "image": "http://codersdesiderata.com/files/2016/03/2016-03-06_05h26_23-2.png",
         "link": null,
         "description": "Adventure-puzzler RPG game that combines real-time action combat and puzzle elements that take place through outdoor environmental terrain and dungeon chambers. Support a two-player mode with a authoritarian server that manages state integrity and events. Implements a custom event management system that can be managed through Tiled map editing software.",
         "technicalDescription": "In it's current implementation, the game client is built with Phaser.JS and runs in the browser. Communication with the server is accomplished through websockets. The server was originally a Python based websockets server using Tornado websocket server, but was later ported to C++ with the libwebsockets library to utilize multithreading.\n\nA custom event system was implemented to handle environmental triggers that involve either the player or another environmental object interacting with triggers. When a trigger is activated, an event is triggered which will alter game state.",
         "roles": [],
         "technologies": ["C++", "JavaScript", "HTML5", "PhaserJS"],
         "categories": ["Application", "Hobby", "GameDev"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 26,
@@ -353,7 +379,8 @@
         "roles": [],
         "technologies": ["Javascript", "Reactjs"],
         "categories": ["Website"],
-        "priority": 1
+        "priority": 1,
+        "show": 1
     },
     {
         "id": 27,
@@ -367,7 +394,8 @@
         "roles": ["Web Developer"],
         "technologies": ["Javascript", "Python", "Django", "Ignition", "AWS", "Memcache"],
         "categories": ["Website"],
-        "priority": 1
+        "priority": 1,
+        "show": 1
     },
     {
         "id": 28,
@@ -381,7 +409,8 @@
         "roles": ["Web Developer"],
         "technologies": ["Javascript", "Python", "Ignition", "AWS"],
         "categories": ["Website"],
-        "priority": 1
+        "priority": 1,
+        "show": 1
     },
     {
         "id": 29,
@@ -394,7 +423,8 @@
         "roles": [],
         "technologies": ["C++", "OpenGL"],
         "categories": ["Application", "GameDev"],
-        "priority": 5
+        "priority": 5,
+        "show": 0
     },
     {
         "id": 30,
@@ -407,7 +437,8 @@
         "roles": [],
         "technologies": ["Javascript", "AI"],
         "categories": ["Website", "GameDev"],
-        "priority": 4
+        "priority": 4,
+        "show": 0
     },
     {
         "id": 31,
@@ -420,7 +451,8 @@
         "roles": [],
         "technologies": ["Android", "Javascript", "Titanium"],
         "categories": ["Application", "Mobile"],
-        "priority": 5
+        "priority": 5,
+        "show": 0
     },
     {
         "id": 32,
@@ -433,7 +465,8 @@
         "roles": [],
         "technologies": ["Android", "Unity", "C#"],
         "categories": ["Application", "Game Development"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     },
     {
         "id": 33,
@@ -446,19 +479,21 @@
         "roles": ["Technical Lead"],
         "technologies": ["JavaScript", "React", "Cerebral"],
         "categories": ["Website"],
-        "priority": 1
+        "priority": 1,
+        "show": 1
     },
     {
         "id": 34,
         "title": "Unity Object Inspect",
         "startYear": 2016,
         "endYear": 2016,
-        "image": null,
+        "image": "http://codersdesiderata.com/files/2017/02/horror_inspect.png",
         "link": null,
         "description": "Coded feature to allow user to inspect an object on click. Created during a 48 hour game jam for local Game Development meetup group.",
         "roles": [],
         "technologies": ["Unity", "C#"],
         "categories": ["Game Development", "GameDev"],
-        "priority": 3
+        "priority": 3,
+        "show": 1
     }
 ]
