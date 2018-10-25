@@ -291,7 +291,7 @@
         "roles": ["Lead Developer"],
         "technologies": ["Visual Basic", "ActiveX", "mySQL", "PHP"],
         "categories": ["Website", "Application"],
-        "priority": 4,
+        "priority": 7,
         "show": 1
     },
     {
@@ -306,7 +306,7 @@
         "roles": [],
         "technologies": ["Node", "Express", "MongoDB", "Heroku"],
         "categories": ["Website", "Hobby"],
-        "priority": 4,
+        "priority": 6,
         "show": 1
     },
     {
@@ -339,6 +339,22 @@
     },
     {
         "id": 24,
+        "title": "Out of Phase",
+        "startYear": 2015,
+        "endYear": null,
+        "image": 
+        "http://codersdesiderata.com/files/2017/11/oop1.png",
+        "link": null,
+        "description": "Adventure-puzzler RPG game that combines real-time action combat and puzzle elements that take place through outdoor environmental terrain and dungeon chambers. Support a two-player mode with a authoritarian server that manages state integrity and events. Implements a custom event management system that can be managed through Tiled map editing software.",
+        "technicalDescription": "In it's current implementation, the game client is built with Phaser.JS and runs in the browser. Communication with the server is accomplished through websockets. The server was originally a Python based websockets server using Tornado websocket server, but was later ported to C++ with the libwebsockets library to utilize multithreading.\n\nA custom event system was implemented to handle environmental triggers that involve either the player or another environmental object interacting with triggers. When a trigger is activated, an event is triggered which will alter game state.",
+        "roles": [],
+        "technologies": ["C++", "JavaScript", "HTML5", "PhaserJS"],
+        "categories": ["Application", "Hobby", "GameDev"],
+        "priority": 3,
+        "show": 1
+    },
+    {
+        "id": 25,
         "title": "RPG Slots",
         "startYear": 2016,
         "endYear": null,
@@ -351,22 +367,7 @@
         "categories": ["Application", "Hobby", "GameDev"],
         "priority": 3,
         "show": 1
-    },
-    {
-        "id": 25,
-        "title": "Out of Phase",
-        "startYear": 2015,
-        "endYear": null,
-        "image": "http://codersdesiderata.com/files/2016/03/2016-03-06_05h26_23-2.png",
-        "link": null,
-        "description": "Adventure-puzzler RPG game that combines real-time action combat and puzzle elements that take place through outdoor environmental terrain and dungeon chambers. Support a two-player mode with a authoritarian server that manages state integrity and events. Implements a custom event management system that can be managed through Tiled map editing software.",
-        "technicalDescription": "In it's current implementation, the game client is built with Phaser.JS and runs in the browser. Communication with the server is accomplished through websockets. The server was originally a Python based websockets server using Tornado websocket server, but was later ported to C++ with the libwebsockets library to utilize multithreading.\n\nA custom event system was implemented to handle environmental triggers that involve either the player or another environmental object interacting with triggers. When a trigger is activated, an event is triggered which will alter game state.",
-        "roles": [],
-        "technologies": ["C++", "JavaScript", "HTML5", "PhaserJS"],
-        "categories": ["Application", "Hobby", "GameDev"],
-        "priority": 3,
-        "show": 1
-    },
+    },    
     {
         "id": 26,
         "title": "Module Showcase",

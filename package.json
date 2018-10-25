@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/cerebral/cerebral-boilerplate",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.production.config.js",
+    "build": "set NODE_ENV=production webpack --config webpack.production.config.js",
     "start": "node server"
   },
   "dependencies": {

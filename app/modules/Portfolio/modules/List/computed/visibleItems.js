@@ -23,12 +23,8 @@ export default function (get) {
 			}
 		});
 
-		//console.log(category_filter);
-
 		item.categories.map(function (category) {
-			//console.log(category.toUpperCase(), " ", (category_filter||"").toUpperCase())			
 			if(category.toUpperCase() == (category_filter||"").toUpperCase()) {
-				console.log("Match");
 				category_matches = true;
 			}
 		});
@@ -60,7 +56,5 @@ export default function (get) {
 
 			return a_year < b_year ? 1 : a_year > b_year ? -1 : a.startYear < b.startYear ? 1 : a.startYear > b.startYear ? -1 : 0;
 		}
-		//console.log(a_year + "(" + a.startYear + ")" + " vs " + b_year + "(" + b.startYear + ")" + " " + v);
-		//return v;
 	});
 };

@@ -72,24 +72,18 @@ class Home extends React.Component {
       return (item.title);
     }
 
-        // <div className="col-md-12" style={{textAlign: "center"}}>
-        // 	<ul id="category-menu" className="list-unstyled list-inline">
-        // 	  <li className={this.props.selectedLanguage == null ? 'active': null }><a onClick={() => signals.languageChanged({ language: null})}>All</a></li>
-        // 		<li className={this.props.selectedLanguage == "PHP" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "PHP"})}>PHP</a></li>
-        // 		<li className={this.props.selectedLanguage == "PYTHON" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "PYTHON"})}>Python</a></li>
-        // 		<li className={this.props.selectedLanguage == "JAVA" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "JAVA"})}>Java</a></li>
-        // 		<li className={this.props.selectedLanguage == "C++" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "C++"})}>C++</a></li>
-        // 		<li className={this.props.selectedLanguage == "C#" ? 'active': null }><a onClick={() => signals.languageChanged({ language: "C#"})}>C#</a></li>
-        //   </ul>
-        // </div>
+    const displayRoles = function (item) {
+      if(item.roles.length > 0) {
+        return <div className="skillset-labels roles">
+        <strong>Roles:</strong>&nbsp;
+        <ul className="list-inline" style={{display: 'inline-block'}}>{item.roles.map(function (role) {
+            return <li><button type='button' className='btn btn-xs btn-success'>{role}</button></li>
+        })}</ul>
+        </div>
+      }
+      return null;
+    }
 
-        // <div className="col-md-12 introduction">
-        //   <p>I am an experienced full stack software engineer with 15 years experience, fluent in a variety of compiled and interpreted languages (Python, PHP, JavaScript, Java, and C++).</p>
-
-        //   <p>I build and maintain web and native applications from the ground up, starting from the server or client OS, up through the database and code. I have created web and native apps for desktop, tablet, and mobile under a variety of verticals, including marketing, eCommerce, real estate, and publishing.</p>
-
-        //   <p>My code is clean, efficient, practical, human readable, and tested. I use object oriented programming and design patterns. I avoid premature optimization, and engineer my classes and components so that they are extensible and scale. I use stable and proven frameworks and libraries when using them makes sense and benefits the project.</p>
-        // </div>
     return (
       <div>
         <h1>PROJECTS</h1>
@@ -97,9 +91,9 @@ class Home extends React.Component {
           <div className="col-md-12 filters">
             <ul id="category-menu" className="list-unstyled list-inline">
               <li className={this.props.selectedCategory == null ? 'active': null }><a onClick={() => signals.categoryChanged({ category: null})}>All</a></li>
+              <li className={this.props.selectedCategory == "GameDev" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "GameDev"})}>Game</a></li>              
               <li className={this.props.selectedCategory == "Website" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "Website"})}>Web</a></li>
               <li className={this.props.selectedCategory == "Application" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "Application"})}>Applications</a></li>
-              <li className={this.props.selectedCategory == "GameDev" ? 'active': null }><a onClick={() => signals.categoryChanged({ category: "GameDev"})}>Game</a></li>
             </ul>
           </div>
         </div>
@@ -129,12 +123,7 @@ class Home extends React.Component {
                         return <li><button type='button' className='btn btn-xs btn-success'>{tech}</button></li>
                     })}</ul>
                     </div>
-                    <div className="skillset-labels roles">
-                    <strong>Roles:</strong>&nbsp;
-                    <ul className="list-inline" style={{display: 'inline-block'}}>{item.roles.map(function (role) {
-                        return <li><button type='button' className='btn btn-xs btn-success'>{role}</button></li>
-                    })}</ul>
-                    </div>
+                    { displayRoles(item) }
                 </div>
                 <div style={{ clear: 'both'}}></div>
               </div>
