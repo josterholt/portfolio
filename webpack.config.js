@@ -36,11 +36,6 @@ module.exports = {
                 },
             },
             {
-                test: /\.json?$/,
-                exclude: /node_modules/,
-                loader: 'json-loader',
-            },
-            {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },

@@ -26,14 +26,6 @@
         "start": "webpack serve"
     },
     "dependencies": {
-        "baobab": "^2.2.1",
-        "cerebral": "^0.33.30",
-        "cerebral-addons": "^0.2.4",
-        "cerebral-model-baobab": "^0.4.7",
-        "cerebral-module-http": "^0.1.1",
-        "cerebral-module-router": "^0.10.0",
-        "cerebral-url-scheme-compiler": "^0.4.1",
-        "cerebral-view-react": "^0.10.4",
         "html-to-react": "^1.4.5",
         "overmind": "^27.0.0",
         "overmind-react": "^28.0.0",
@@ -52,6 +44,7 @@
         "css-loader": "^5.2.0",
         "html-webpack-plugin": "^5.3.1",
         "json-loader": "^0.5.7",
+        "overmind-devtools": "^28.0.0",
         "postcss": "^8.2.9",
         "postcss-cli": "^8.3.1",
         "postcss-loader": "^5.2.0",
