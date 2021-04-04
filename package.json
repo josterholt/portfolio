@@ -1,60 +1,69 @@
 {
-  "name": "item-list",
-  "version": "0.1.0",
-  "description": "A simple React list using Cerebral",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cerebral/cerebral-boilerplate.git"
-  },
-  "keywords": [
-    "express",
-    "webpack",
-    "node",
-    "cerebral"
-  ],
-  "author": "Justin Osterholt",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cerebral/cerebral-boilerplate/issues"
-  },
-  "homepage": "https://github.com/cerebral/cerebral-boilerplate",
-  "scripts": {
-    "build": "set NODE_ENV=production webpack --config webpack.production.config.js",
-    "start": "node server"
-  },
-  "dependencies": {
-    "baobab": "^2.2.1",
-    "cerebral": "^0.33.30",
-    "cerebral-addons": "^0.2.4",
-    "cerebral-model-baobab": "^0.4.7",
-    "cerebral-module-http": "^0.1.1",
-    "cerebral-module-router": "^0.10.0",
-    "cerebral-url-scheme-compiler": "^0.4.1",
-    "cerebral-view-react": "^0.10.4",
-    "html-to-react": "^1.2.11",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7"
-  },
-  "devDependencies": {
-    "autoprefixer": "^6.0.3",
-    "babel": "^5.8.23",
-    "babel-core": "^5.8.34",
-    "babel-loader": "^5.3.2",
-    "babel-plugin-react-transform": "^1.0.5",
-    "css-loader": "^0.19.0",
-    "express": "^4.13.3",
-    "extract-text-webpack-plugin": "^0.8.2",
-    "html-webpack-plugin": "^1.6.1",
-    "json-loader": "^0.5.3",
-    "postcss-loader": "^0.6.0",
-    "react-addons-test-utils": "^0.14.3",
-    "react-transform-hmr": "^1.0.0",
-    "rimraf": "^2.4.3",
-    "stats-webpack-plugin": "^0.2.1",
-    "style-loader": "^0.12.4",
-    "webpack": "^1.12.13",
-    "webpack-dev-middleware": "^1.5.1",
-    "webpack-hot-middleware": "^2.7.1"
-  }
+    "name": "item-list",
+    "version": "0.1.0",
+    "description": "A simple React list using Cerebral",
+    "main": "server.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cerebral/cerebral-boilerplate.git"
+    },
+    "keywords": [
+        "express",
+        "webpack",
+        "node",
+        "cerebral"
+    ],
+    "author": "Justin Osterholt",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/cerebral/cerebral-boilerplate/issues"
+    },
+    "homepage": "https://github.com/cerebral/cerebral-boilerplate",
+    "scripts": {
+        "build:css": "postcss app/assets/tailwind.css -o app/assets/main.css",
+        "watch:css": "postcss app/assets/tailwind.css -o app/assets/main.css -w",
+        "build": "set NODE_ENV=production webpack --config webpack.production.config.js",
+        "start": "webpack serve"
+    },
+    "dependencies": {
+        "baobab": "^2.2.1",
+        "cerebral": "^0.33.30",
+        "cerebral-addons": "^0.2.4",
+        "cerebral-model-baobab": "^0.4.7",
+        "cerebral-module-http": "^0.1.1",
+        "cerebral-module-router": "^0.10.0",
+        "cerebral-url-scheme-compiler": "^0.4.1",
+        "cerebral-view-react": "^0.10.4",
+        "html-to-react": "^1.4.5",
+        "overmind": "^27.0.0",
+        "overmind-react": "^28.0.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "tailwind-react-ui": "^0.8.1",
+        "tailwindcss": "^2.0.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.14",
+        "@babel/preset-env": "^7.13.12",
+        "@babel/preset-react": "7.13.13",
+        "autoprefixer": "^10.2.5",
+        "babel-loader": "^8.0.6",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^5.2.0",
+        "html-webpack-plugin": "^5.3.1",
+        "json-loader": "^0.5.7",
+        "postcss": "^8.2.9",
+        "postcss-cli": "^8.3.1",
+        "postcss-loader": "^5.2.0",
+        "postcss-preset-env": "^6.7.0",
+        "process": "^0.11.10",
+        "react-addons-test-utils": "^15.6.2",
+        "react-transform-hmr": "^1.0.0",
+        "rimraf": "^3.0.2",
+        "style-loader": "^2.0.0",
+        "twin.macro": "^2.3.2",
+        "webpack": "^5.30.0",
+        "webpack-cli": "^4.6.0",
+        "webpack-dev-server": "^3.11.2"
+    }
 }

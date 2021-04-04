@@ -9,7 +9,7 @@
         "roles": ["Lead Developer"],
         "technologies": ["Ignition", "Java", "Jython"],
         "categories": ["Website", "Marketing", "Sales"],
-        "priority": 1,
+        "priority": 3,
         "show": 1
     },
     {
@@ -23,12 +23,12 @@
         "roles": ["Lead Developer"],
         "technologies": ["Python", "Django", "MySQL"],
         "categories": ["Website"],
-        "priority": 1,
+        "priority": 2,
         "show": 1
     },
     {
         "id": 3,
-        "title": "Inductive University",
+        "title": "Inductive University (Initial Launch)",
         "startYear": 2014,
         "endYear": 2015,
         "image": "http://codersdesiderata.com/files/2016/01/2016-01-14_06h11_43.png",
@@ -37,7 +37,7 @@
         "roles": ["Senior Developer"],
         "technologies": ["Python", "Django", "MySQL", "AWS"],
         "categories": ["Website"],
-        "priority": 1,
+        "priority": 2,
         "show": 1
     },
     {
@@ -65,7 +65,7 @@
         "roles": ["Project Lead"],
         "technologies": ["Ignition", "Java", "Jython", "SOAP"],
         "categories": ["Application"],
-        "priority": 2,
+        "priority": 4,
         "show": 1
     },
     {
@@ -137,7 +137,7 @@
         "roles": ["Senior Programmer"],
         "technologies": ["Android", "iOS", "PhoneGap", "AngularJS"],
         "categories": ["Website", "Application"],
-        "priority": 3,
+        "priority": 4,
         "show": 1
     },
     {
@@ -179,7 +179,7 @@
         "roles": ["Research/Development"],
         "technologies": ["Salesforce", "VisualForce/Apex", "JavaScript"],
         "categories": ["Website"],
-        "priority": 3,
+        "priority": 4,
         "show": 1
     },
     {
@@ -380,7 +380,7 @@
         "roles": [],
         "technologies": ["Javascript", "Reactjs"],
         "categories": ["Website"],
-        "priority": 1,
+        "priority": 2,
         "show": 1
     },
     {
@@ -410,7 +410,7 @@
         "roles": ["Web Developer"],
         "technologies": ["Javascript", "Python", "Ignition", "AWS"],
         "categories": ["Website"],
-        "priority": 1,
+        "priority": 2,
         "show": 1
     },
     {
@@ -496,5 +496,75 @@
         "categories": ["Game Development", "GameDev"],
         "priority": 3,
         "show": 1
-    }
+    },
+    {
+        "id": 35,
+        "title": "Ignition Exchange Community Hub",
+        "startYear": 2019,
+        "endYear": null,
+        "image": "",
+        "link": null,
+        "description": "(Tight deadline, iterative development cycles)",
+        "roles": ["Lead"],
+        "technologies": ["React", "Redux", "RxJs"],
+        "categories": ["Website"],
+        "priority": 1,
+        "show": 1
+    },
+        {
+        "id": 36,
+        "title": "Docker/Fargate Integration Effort",
+        "startYear": 2019,
+        "endYear": null,
+        "image": "",
+        "link": null,
+        "description": "(For build pipeline and production)",
+        "roles": ["Lead"],
+        "technologies": ["Docker", "AWS Fargate", " AWS Elastic Load Balancer"],
+        "categories": ["Website"],
+        "priority": 1,
+        "show": 1
+    },
+    {
+        "id": 37,
+        "title": "Team stats dashboard",
+        "startYear": 2020,
+        "endYear": null,
+        "image": "(Burndown chart, areas that may need refactoring)",
+        "link": null,
+        "description": "",
+        "roles": [],
+        "technologies": ["React", "Electron", "Github API"],
+        "categories": ["Management"],
+        "priority": 1,
+        "show": 1
+    },
+    {
+        "id": 38,
+        "title": "Web Infrastructure Updates",
+        "startYear": 2020,
+        "endYear": null,
+        "image": "",
+        "link": null,
+        "description": "(Improve resilience and optimization of sites)",
+        "roles": [],
+        "technologies": ["AWS CloudFront", "AWS Elastic Load Balancer", "AWS S3"],
+        "categories": ["Lead"],
+        "priority": 1,
+        "show": 1
+    },
+    {
+        "id": 39,
+        "title": "Inductive University 8.0 Revamp",
+        "startYear": 2019,
+        "endYear": 2019,
+        "image": "",
+        "link": null,
+        "description": "(Redesigned website, data migration for streamlined design)",
+        "roles": ["Lead"],
+        "technologies": ["Django", "Python", "MySQL"],
+        "categories": [],
+        "priority": 1,
+        "show": 1
+    }   
 ]
