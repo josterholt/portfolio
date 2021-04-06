@@ -111,8 +111,6 @@ export default function () {
     const {selectedCategory, displayItems} = useState()
     const {categoryChanged} = useActions()
 
-    console.log(displayItems)
-
     return (
         <div>
             <div style={{marginTop: '50px', marginBottom: '50px'}}>

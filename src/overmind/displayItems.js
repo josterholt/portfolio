@@ -26,7 +26,6 @@ export default function ({items, selectedCategory}) {
             })
 
             item.categories.map(function (category) {
-                console.log({category, category_filter})
                 if (
                     category.toUpperCase() ==
                     (category_filter || '').toUpperCase()
