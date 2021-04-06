@@ -22,8 +22,8 @@
     "scripts": {
         "build:css": "postcss app/assets/tailwind.css -o app/assets/main.css",
         "watch:css": "postcss app/assets/tailwind.css -o app/assets/main.css -w",
-        "build": "set NODE_ENV=production webpack --config webpack.production.config.js",
-        "start": "webpack serve"
+        "build": "webpack --config webpack.prod.js",
+        "start": "webpack serve --config webpack.dev.js"
     },
     "dependencies": {
         "html-to-react": "^1.4.5",
