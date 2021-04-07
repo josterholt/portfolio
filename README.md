@@ -1,4 +1,4 @@
-<img src="https://travis-ci.com/josterholt/portfolio.svg?branch=main" />
+<img src="https://travis-ci.com/josterholt/portfolio.svg?branch=next" />
 
 # Portfolio App
 
