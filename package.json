@@ -22,11 +22,39 @@
     "scripts": {
         "build:css": "postcss app/assets/tailwind.css -o app/assets/main.css",
         "watch:css": "postcss app/assets/tailwind.css -o app/assets/main.css -w",
+        "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
+        "format": "npm run prettier -- --write",
+        "check-format": "npm run prettier -- --list-different",
+        "validate": "yarn-run-all --parallel check-format lint build",
         "build": "webpack --config webpack.prod.js",
-        "start": "webpack serve --config webpack.dev.js"
+        "start": "webpack serve --config webpack.dev.js",
+        "test": "is-ci \"test:coverage\" \"test:watch\"",
+        "test:coverage": "jest --coverage",
+        "test:watch": "jest --watch",
+        "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
+    },
+    "jest-runner-eslint": {
+        "cliOptions": {
+            "ignorePath": "./.gitignore"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged && npm run build"
+        }
+    },
+    "lint-staged": {
+        "**/*.+(js|json|css|html|md)": [
+            "prettier",
+            "jest --findRelatedTests",
+            "git add"
+        ]
     },
     "dependencies": {
+        "core-js": "3",
         "html-to-react": "^1.4.5",
+        "is-ci-cli": "^2.2.0",
+        "lodash": "^4.17.21",
         "overmind": "^27.0.0",
         "overmind-react": "^28.0.0",
         "react": "^17.0.2",
@@ -38,11 +66,15 @@
         "@babel/core": "^7.13.14",
         "@babel/preset-env": "^7.13.12",
         "@babel/preset-react": "7.13.13",
+        "@testing-library/jest-dom": "^5.11.10",
+        "@testing-library/react": "^11.2.6",
         "autoprefixer": "^10.2.5",
         "babel-loader": "^8.0.6",
+        "babel-plugin-jsx-remove-data-test-id": "^3.0.0",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^5.2.0",
         "html-webpack-plugin": "^5.3.1",
+        "jest": "^26.6.3",
         "json-loader": "^0.5.7",
         "overmind-devtools": "^28.0.0",
         "postcss": "^8.2.9",
@@ -57,6 +89,7 @@
         "twin.macro": "^2.3.2",
         "webpack": "^5.30.0",
         "webpack-cli": "^4.6.0",
-        "webpack-dev-server": "^3.11.2"
+        "webpack-dev-server": "^3.11.2",
+        "yarn-run-all": "^3.1.1"
     }
 }

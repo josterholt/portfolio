@@ -90,7 +90,7 @@ const displayRoles = function (item) {
                 <ul className="list-inline" style={{display: 'inline-block'}}>
                     {item.roles.map(function (role) {
                         return (
-                            <li>
+                            <li key={item.id + '-' + role}>
                                 <button
                                     type="button"
                                     className="btn btn-xs btn-success"
@@ -212,7 +212,11 @@ export default function () {
                 <ul className="list-unstyled border-separator">
                     {displayItems.map(function (item, index) {
                         return (
-                            <li key={item.id} className="card">
+                            <li
+                                key={item.id}
+                                className="card"
+                                data-testid="portfolio-card"
+                            >
                                 <div className="main-content">
                                     <h3 style={{textAlign: 'center'}}>
                                         {getHeader(item)}
@@ -251,7 +255,13 @@ export default function () {
                                                 {item.technologies.map(
                                                     function (tech) {
                                                         return (
-                                                            <li>
+                                                            <li
+                                                                key={
+                                                                    item.id +
+                                                                    '-' +
+                                                                    tech
+                                                                }
+                                                            >
                                                                 <button
                                                                     type="button"
                                                                     className="btn btn-xs btn-success"
