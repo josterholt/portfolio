@@ -116,23 +116,27 @@ export default function () {
             <div style={{marginTop: '50px', marginBottom: '50px'}}>
                 <h1>Justin Osterholt</h1>
                 <div>Software Engineering Manager | Full Stack Engineer</div>
-                <div style={{marginTop: '50px', fontSize: '18px'}}>
+                <div
+                    style={{
+                        marginTop: '50px',
+                        fontSize: '18px',
+                        color: '#e6e6e6',
+                    }}
+                >
                     <p>
                         Hello, I'm Justin, a software engineering manager and
                         full stack developer with 18+ years experience
                         developing web applications. I strive to find ideal
                         customized solutions for enterprise problems.
                     </p>
-
+                    <br />
                     <p>
-                        I lead and enable engineering teams, offering guidance
-                        and helping developers grow through weekly one-on-ones,
-                        delegation, and feedback. I use agile and scrum
-                        principles to help manage work and continually improve.
-                        I support and thrive in an environment that encourages
-                        collaboration, curiosity, and communication.
+                        I lead and enable engineering teams. I work hands-on
+                        coding/designing, as well as offering guidance and
+                        coaching. I love collaboration, curiosity, and
+                        communication.
                     </p>
-
+                    <br />
                     <p>
                         I manage applications from infrastructure to code,
                         including the build pipeline and testing. In my effort
@@ -141,6 +145,7 @@ export default function () {
                         programming principles, and strive for well documented
                         readable code.
                     </p>
+                    <br />
                 </div>
             </div>
 
