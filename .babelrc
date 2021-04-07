@@ -1,17 +1,9 @@
 {
-  "stage": 0,
-  "env": {
-    "development": {
-      "plugins": ["react-transform"],
-      "extra": {
-        "react-transform": {
-          "transforms": [{
-            "transform": "react-transform-hmr",
-            "imports": ["react"],
-            "locals": ["module"]
-          }]
-        }
-      }
-    }
-  }
+  "presets": [
+    ["@babel/preset-env", {
+      "useBuiltIns": "usage", // or "entry"
+      "corejs": 3,
+    }],
+    "@babel/preset-react"
+  ]
 }

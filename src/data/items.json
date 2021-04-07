@@ -9,7 +9,7 @@
         "roles": ["Lead Developer"],
         "technologies": ["Ignition", "Java", "Jython"],
         "categories": ["Website", "Marketing", "Sales"],
-        "priority": 1,
+        "priority": 3,
         "show": 1
     },
     {
@@ -23,12 +23,12 @@
         "roles": ["Lead Developer"],
         "technologies": ["Python", "Django", "MySQL"],
         "categories": ["Website"],
-        "priority": 1,
+        "priority": 2,
         "show": 1
     },
     {
         "id": 3,
-        "title": "Inductive University",
+        "title": "Inductive University (Initial Launch)",
         "startYear": 2014,
         "endYear": 2015,
         "image": "http://codersdesiderata.com/files/2016/01/2016-01-14_06h11_43.png",
@@ -37,7 +37,7 @@
         "roles": ["Senior Developer"],
         "technologies": ["Python", "Django", "MySQL", "AWS"],
         "categories": ["Website"],
-        "priority": 1,
+        "priority": 2,
         "show": 1
     },
     {
@@ -65,7 +65,7 @@
         "roles": ["Project Lead"],
         "technologies": ["Ignition", "Java", "Jython", "SOAP"],
         "categories": ["Application"],
-        "priority": 2,
+        "priority": 4,
         "show": 1
     },
     {
@@ -121,7 +121,15 @@
         "description": "Navigator is a paid web service that gives private sector businesses tools to search and keep track of government bids and related information. The product holds hundreds of thousands of content items that make up jurisdictions (states, counties, cities, etc), contacts, bids, and other data.<br /><br /> A website was needed that would allow users to efficiently search and filter Government bids and related information based on several verticals. In addition, content needed to be filtered based on product subscription type and level.",
         "roles": ["Developer", "Designer"],
         "technologies": ["PHP", "APC", "Doctrine 2", "Custom API"],
-        "concepts": ["MVC", "S.O.L.I.D", "Namespaces", "RESTful Interface", "Reflection", "Annotation", "Magic Methods"],
+        "concepts": [
+            "MVC",
+            "S.O.L.I.D",
+            "Namespaces",
+            "RESTful Interface",
+            "Reflection",
+            "Annotation",
+            "Magic Methods"
+        ],
         "categories": ["Website"],
         "priority": 3,
         "show": 1
@@ -137,7 +145,7 @@
         "roles": ["Senior Programmer"],
         "technologies": ["Android", "iOS", "PhoneGap", "AngularJS"],
         "categories": ["Website", "Application"],
-        "priority": 3,
+        "priority": 4,
         "show": 1
     },
     {
@@ -149,7 +157,11 @@
         "link": null,
         "description": "The client needed an interactive kiosk for their mall to help their customers locate stores and points of interest. Customers needed the ability to filter locations, as well s directly select them from the interactive map.",
         "roles": ["Technical Lead"],
-        "technologies": ["AngularJS", "Touch/Swipe Support", "Embedded SVGs (HTML5)"],
+        "technologies": [
+            "AngularJS",
+            "Touch/Swipe Support",
+            "Embedded SVGs (HTML5)"
+        ],
         "categories": ["Website"],
         "priority": 3,
         "show": 1
@@ -167,7 +179,7 @@
         "categories": ["Hobby"],
         "priority": 5,
         "show": 1
-    },    
+    },
     {
         "id": 12,
         "title": "Govtech Event System",
@@ -179,7 +191,7 @@
         "roles": ["Research/Development"],
         "technologies": ["Salesforce", "VisualForce/Apex", "JavaScript"],
         "categories": ["Website"],
-        "priority": 3,
+        "priority": 4,
         "show": 1
     },
     {
@@ -205,7 +217,13 @@
         "link": null,
         "description": "First iteration of the sites on the Clickability platform, a proprietary Java based CMS.   Initial launch involved a redesign of Govtech.com, DigitalCommunities.com, and Governing.com.",
         "roles": ["Senior Developer"],
-        "technologies": ["Clickability", "Velocity", "PHP", "mySQL", "JavaScript"],
+        "technologies": [
+            "Clickability",
+            "Velocity",
+            "PHP",
+            "mySQL",
+            "JavaScript"
+        ],
         "categories": ["Website"],
         "priority": 3,
         "show": 1
@@ -275,7 +293,14 @@
         "link": null,
         "description": "This was a collection of feature rich Realtor websites and full-service hosting. They contained searchable real estate listings and daily e-mail notifications. The sites also had common tools such as sharing and calculators. Data was mainly populated from IDX and RETS feeds.",
         "roles": ["Lead Developer"],
-        "technologies": ["ASP", "ASP.net", "ActionScript", "Flash", "Windows Server 2003", "MSSQL"],
+        "technologies": [
+            "ASP",
+            "ASP.net",
+            "ActionScript",
+            "Flash",
+            "Windows Server 2003",
+            "MSSQL"
+        ],
         "categories": ["Website"],
         "priority": 3,
         "show": 1
@@ -342,8 +367,7 @@
         "title": "Out of Phase",
         "startYear": 2015,
         "endYear": null,
-        "image": 
-        "http://codersdesiderata.com/files/2017/11/oop1.png",
+        "image": "http://codersdesiderata.com/files/2017/11/oop1.png",
         "link": null,
         "description": "Adventure-puzzler RPG game that combines real-time action combat and puzzle elements that take place through outdoor environmental terrain and dungeon chambers. Support a two-player mode with a authoritarian server that manages state integrity and events. Implements a custom event management system that can be managed through Tiled map editing software.",
         "technicalDescription": "In it's current implementation, the game client is built with Phaser.JS and runs in the browser. Communication with the server is accomplished through websockets. The server was originally a Python based websockets server using Tornado websocket server, but was later ported to C++ with the libwebsockets library to utilize multithreading.\n\nA custom event system was implemented to handle environmental triggers that involve either the player or another environmental object interacting with triggers. When a trigger is activated, an event is triggered which will alter game state.",
@@ -367,7 +391,7 @@
         "categories": ["Application", "Hobby", "GameDev"],
         "priority": 3,
         "show": 1
-    },    
+    },
     {
         "id": 26,
         "title": "Module Showcase",
@@ -380,7 +404,7 @@
         "roles": [],
         "technologies": ["Javascript", "Reactjs"],
         "categories": ["Website"],
-        "priority": 1,
+        "priority": 2,
         "show": 1
     },
     {
@@ -393,7 +417,14 @@
         "description": "Multi-purpose corporate website that serves as an entry point for Inductive Automation, Ignition products, services, and community. Some sections rely on external web services to obtain and record data.",
         "technicalDescription": "Over time there have been a series of projects that entail the fullstack, including modifying the database for new content, Python/Django coding for new pages and web services, and HTML/CSS coding for new pages and styling. This website is oriented to marketing, so appearance and responsiveness for tablet and mobile have been a focus.",
         "roles": ["Web Developer"],
-        "technologies": ["Javascript", "Python", "Django", "Ignition", "AWS", "Memcache"],
+        "technologies": [
+            "Javascript",
+            "Python",
+            "Django",
+            "Ignition",
+            "AWS",
+            "Memcache"
+        ],
         "categories": ["Website"],
         "priority": 1,
         "show": 1
@@ -410,7 +441,7 @@
         "roles": ["Web Developer"],
         "technologies": ["Javascript", "Python", "Ignition", "AWS"],
         "categories": ["Website"],
-        "priority": 1,
+        "priority": 2,
         "show": 1
     },
     {
@@ -462,7 +493,7 @@
         "endYear": 2014,
         "image": null,
         "link": null,
-        "description": "Unity plugin for sending push notifications.",
+        "description": "Unity plugin for sending push notifications to an Android device.",
         "roles": [],
         "technologies": ["Android", "Unity", "C#"],
         "categories": ["Application", "Game Development"],
@@ -495,6 +526,88 @@
         "technologies": ["Unity", "C#"],
         "categories": ["Game Development", "GameDev"],
         "priority": 3,
+        "show": 1
+    },
+    {
+        "id": 35,
+        "title": "Ignition Exchange Community Hub",
+        "startYear": 2019,
+        "endYear": null,
+        "image": "http://codersdesiderata.com/files/2021/04/ia_exchange_homepage_040721_cropped-1.png",
+        "link": null,
+        "description": "The Exchange is a place for integrators to share reusable Ignition resources (ex. components, projects, assets, etc.). Resources can be shared publicly, restricted to organization, or be private. Versioning is also supported, allowing users to download older versions if needed. This new product was revealed in a live demo in our annual community conference.",
+        "technicalDescription": "This project was one of the more complex React applicatins I've developed and was extra challenging due to the tight time frame. Redux was utilized for app-level state management and RxJs was used to help relay global events to components.",
+        "roles": ["Lead"],
+        "technologies": ["React", "Redux", "RxJs"],
+        "categories": ["Website"],
+        "priority": 1,
+        "show": 1
+    },
+    {
+        "id": 36,
+        "title": "Docker/Fargate Integration Effort",
+        "startYear": 2019,
+        "endYear": null,
+        "image": "",
+        "link": null,
+        "description": "With a growing development team, we often run into a bottleneck with staging servers for testing and reviewing features. In addition, spinning up a new web servers into production takes a significant amount of time. Containerization is a solution that will address both of these problems. This effort has passed the first phase, using Docker in our local development environments.",
+        "technicalDescription": "Container instances are managed with Docker Compose. For non-development environments, an additional NGINX container is used as a reverse-proxy to the web applications. To help avoid unnessary image builds, code and database data are mounted as a volumes and reside on the host.",
+        "roles": ["Lead"],
+        "technologies": [
+            "Docker",
+            "Docker Compose",
+            "AWS Fargate",
+            " AWS Elastic Load Balancer",
+            "AWS S3"
+        ],
+        "categories": ["Website"],
+        "priority": 1,
+        "show": 1
+    },
+    {
+        "id": 37,
+        "title": "Team Stats Dashboard",
+        "startYear": 2020,
+        "endYear": null,
+        "image": "",
+        "link": null,
+        "description": "The main focus of this dashboard was the burndown chart and breakout of tasks with effort points. This assisted in giving information on how a sprint was progressing. A secondary feature is a tab that displays the number of changes in a Github commit. This was used to detect potential instances where features needed to be broken up.",
+        "roles": [],
+        "technologies": ["React", "Electron", "Github API"],
+        "categories": ["Management"],
+        "priority": 1,
+        "show": 1
+    },
+    {
+        "id": 38,
+        "title": "Web Infrastructure Updates",
+        "startYear": 2020,
+        "endYear": null,
+        "image": "",
+        "link": null,
+        "description": "In an effort to improve uptime and resilience, I've been leaning more heavily on load balancers an Amazon's CDN, Cloud Front. This has made it possible to do server maintenance with no downtime that would normally have interrupted services without.",
+        "roles": [],
+        "technologies": [
+            "AWS CloudFront",
+            "AWS Elastic Load Balancer",
+            "AWS S3"
+        ],
+        "categories": ["Lead"],
+        "priority": 1,
+        "show": 1
+    },
+    {
+        "id": 39,
+        "title": "Inductive University 8.0 Revamp",
+        "startYear": 2019,
+        "endYear": 2019,
+        "image": "http://codersdesiderata.com/files/2021/04/iu_homepage_040721_cropped-1.png",
+        "link": null,
+        "description": "With the new major version release of 8.1, the IU learning platform was revamped with a simplified and cleaner look and feel. The database schema was also cleaned up and restructured to be streamlined, moving away from an inheritance pattern.",
+        "roles": ["Lead"],
+        "technologies": ["Django", "Python", "MySQL"],
+        "categories": [],
+        "priority": 1,
         "show": 1
     }
 ]
