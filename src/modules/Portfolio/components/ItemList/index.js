@@ -2,6 +2,7 @@ import React from 'react'
 import HtmlToReact from 'html-to-react'
 import {Col, Row, Card} from 'tailwind-react-ui'
 import {useState, useActions} from '../../../../overmind'
+import octocatIcon from '../../../../assets/octocatIcon.png'
 
 function generateImage(image, link) {
     if (image) {
@@ -113,19 +114,21 @@ export default function () {
 
     return (
         <div>
-            <div style={{marginTop: '50px', marginBottom: '50px'}}>
+            <div id="hero">
                 <h1>Justin Osterholt</h1>
-                <div>Software Engineering Manager | Full Stack Engineer</div>
-                <div
-                    style={{
-                        marginTop: '50px',
-                        fontSize: '18px',
-                        color: '#e6e6e6',
-                    }}
-                >
+                <div class="title">
+                    Software Engineering Manager, Full Stack Engineer
+                </div>
+                <div class="other-links">
+                    <a href="https://github.com/josterholt">GitHub</a> |{' '}
+                    <a href="https://www.linkedin.com/in/justinosterholt/">
+                        LinkedIn
+                    </a>
+                </div>
+                <div id="introduction">
                     <p>
-                        Hello, I'm Justin, a software engineering manager and
-                        full stack developer with 18+ years experience
+                        Hello 👋, I'm Justin, a software engineering manager and
+                        full stack developer with 18+ years of experience
                         developing web applications. I strive to find ideal
                         customized solutions for enterprise problems.
                     </p>

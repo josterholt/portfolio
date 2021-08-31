@@ -1,5 +1,5 @@
 body {
-    font-size: 16px;
+    font-size: 18px;
 
     color: #bebebe;
     font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
@@ -19,13 +19,14 @@ body {
 
 h1 {
     margin: 20px 0 5px 0;
+    font-size: 2em;
 }
 
-h1,
+/* h1,
 h2,
 h3 {
     color: #e3e3e3;
-}
+} */
 
 h1,
 h1 + div,
@@ -49,15 +50,34 @@ h2 {
     text-shadow: 0px 0px 8px #333;
 }
 
-a,
+/* a,
 a:hover {
     color: #e6e6e6;
+} */
+
+#hero {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.introduction {
-    background: rgba(255, 255, 255, 0.6);
-    color: #333;
-    padding: 20px;
+#hero .title {
+    font-size: 1.25em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#hero .other-links {
+    text-align: center;
+}
+
+#introduction {
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .btn-success {
@@ -161,20 +181,27 @@ li img:hover {
     padding: 25px;
     margin-bottom: 30px;
     min-height: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border-radius: 10px;
 }
 
-.portfolio-list li.card,
+.card h3 {
+    font-size: 1.25em;
+}
+
+/* .portfolio-list li.card,
 .portfolio-list li.card a {
     color: #eee;
-}
+} */
 
-.portfolio-list li.card:nth-child(odd) {
+/* .portfolio-list li.card:nth-child(odd) {
     background: rgba(10, 10, 10, 0.5);
 }
 
 .portfolio-list li.card:nth-child(even) {
     background: rgba(30, 30, 30, 0.5);
-}
+} */
 
 /*.main-content {
       margin: 45px 0 45px 0;
@@ -184,7 +211,7 @@ li img:hover {
   }*/
 
 .skillset-labels-container strong {
-    text-shadow: 0px 0px 8px #333;
+    //text-shadow: 0px 0px 8px #333;
 }
 
 .skillset-labels-container button,
@@ -198,7 +225,7 @@ li img:hover {
 .date-range {
     text-align: center;
     letter-spacing: 0.17em;
-    text-shadow: 0px 0px 8px #333;
+    //text-shadow: 0px 0px 8px #333;
 }
 
 .skillset-labels {
