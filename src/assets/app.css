@@ -3,7 +3,7 @@ body {
     color: #bebebe;
     font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
 
-    background-image: url('./background@2x.png');
+    background-image: url('./background@2X.png');
     background-size: 100px;
     background-attachment: fixed;
 }
