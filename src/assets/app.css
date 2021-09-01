@@ -1,32 +1,17 @@
 body {
-    font-size: 18px;
-
+    background: #999;
     color: #bebebe;
     font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
 
-    background-image: url('http://codersdesiderata.com/tmp-images/px_by_Gre3g_@2X.png');
+    background-image: url('./background@2x.png');
     background-size: 100px;
     background-attachment: fixed;
-}
-
-.old-background {
-    background: #333;
-    background: -webkit-linear-gradient(#333, #000); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#333, #000); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#333, #000); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#333, #000); /* Standard syntax */
 }
 
 h1 {
     margin: 20px 0 5px 0;
     font-size: 2em;
 }
-
-/* h1,
-h2,
-h3 {
-    color: #e3e3e3;
-} */
 
 h1,
 h1 + div,
@@ -50,34 +35,32 @@ h2 {
     text-shadow: 0px 0px 8px #333;
 }
 
-/* a,
-a:hover {
-    color: #e6e6e6;
-} */
-
 #hero {
+    text-align: center;
+    border-bottom: 2px solid #ececec;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: #efefef;
 }
 
 #hero .title {
     font-size: 1.25em;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    color: #ccc;
 }
 
 #hero .other-links {
-    text-align: center;
 }
 
 #introduction {
-    background: #fff;
-    color: #000;
+    /* background: rgba(255, 255, 255, 0.9);
+    background: #fff; */
+    /* color: #000;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 10px; */
     margin-top: 50px;
-    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 50px;
 }
 
 .btn-success {
@@ -109,15 +92,10 @@ li img:hover {
     filter: grayscale(0%);
 }
 
-.btn-group-xs > .btn,
-.btn-xs {
-    padding: 1px 5px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px;
-}
-
 .btn {
+    padding: 1px 5px;
+    font-size: 1rem;
+    border-radius: 3px;
     white-space: nowrap;
     text-align: center;
     vertical-align: middle;
@@ -130,6 +108,7 @@ li img:hover {
 .filters {
     text-align: center;
     margin-bottom: 25px;
+    color: #ccc;
 }
 
 .filters ul {
@@ -176,11 +155,14 @@ li img:hover {
 /**
    * PORTFOLIO LIST
    */
+/* .card {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.8);
+} */
 
-.portfolio-list li.card {
+.card {
+    font-size: 1.125em;
     padding: 25px;
     margin-bottom: 30px;
-    min-height: 500px;
     background: rgba(255, 255, 255, 0.9);
     color: #000;
     border-radius: 10px;
@@ -189,26 +171,6 @@ li img:hover {
 .card h3 {
     font-size: 1.25em;
 }
-
-/* .portfolio-list li.card,
-.portfolio-list li.card a {
-    color: #eee;
-} */
-
-/* .portfolio-list li.card:nth-child(odd) {
-    background: rgba(10, 10, 10, 0.5);
-}
-
-.portfolio-list li.card:nth-child(even) {
-    background: rgba(30, 30, 30, 0.5);
-} */
-
-/*.main-content {
-      margin: 45px 0 45px 0;
-      background: rgba(0,0,0,0.35);
-      padding: 15px;
-
-  }*/
 
 .skillset-labels-container strong {
     //text-shadow: 0px 0px 8px #333;
@@ -219,7 +181,7 @@ li img:hover {
     cursor: default;
     background: #5cb85c;
     border-color: #4cae4c;
-    color: #000;
+    color: #333;
 }
 
 .date-range {
@@ -262,6 +224,10 @@ select {
 .post-image img {
     max-width: 100%;
     display: inline;
+}
+
+.descriptions {
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 640px) {
