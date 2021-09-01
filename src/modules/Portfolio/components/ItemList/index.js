@@ -93,7 +93,7 @@ const displayRoles = function (item) {
                             <li key={item.id + '-' + role}>
                                 <button
                                     type="button"
-                                    className="btn btn-xs btn-success"
+                                    className="btn btn-success"
                                 >
                                     {role}
                                 </button>
@@ -113,39 +113,27 @@ export default function () {
 
     return (
         <div>
-            <div style={{marginTop: '50px', marginBottom: '50px'}}>
+            <div id="hero">
                 <h1>Justin Osterholt</h1>
-                <div>Software Engineering Manager | Full Stack Engineer</div>
-                <div
-                    style={{
-                        marginTop: '50px',
-                        fontSize: '18px',
-                        color: '#e6e6e6',
-                    }}
-                >
-                    <p>
-                        Hello, I'm Justin, a software engineering manager and
-                        full stack developer with 18+ years experience
-                        developing web applications. I strive to find ideal
-                        customized solutions for enterprise problems.
-                    </p>
-                    <br />
-                    <p>
-                        I lead and enable engineering teams. I work hands-on
-                        coding/designing, as well as offering guidance and
-                        coaching. I love collaboration, curiosity, and
-                        communication.
-                    </p>
-                    <br />
-                    <p>
-                        I manage applications from infrastructure to code,
-                        including the build pipeline and testing. In my effort
-                        to build quality performant systems that scale, I use
-                        best-practice design patterns, object-oriented
-                        programming principles, and strive for well documented
-                        readable code.
-                    </p>
-                    <br />
+                <h2 className="title">
+                    Software Engineering Manager, Full Stack Engineer
+                </h2>
+                <div className="other-links">
+                    <a
+                        href="https://github.com/josterholt"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub
+                    </a>
+                    &nbsp;|&nbsp;
+                    <a
+                        href="https://www.linkedin.com/in/justinosterholt/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        LinkedIn
+                    </a>
                 </div>
             </div>
 
@@ -215,6 +203,31 @@ export default function () {
 
             <div className="col-md-12 portfolio-list">
                 <ul className="list-unstyled border-separator">
+                    <li id="introduction" className="card">
+                        <p>
+                            Hello 👋, I'm Justin, a software engineering manager
+                            and full stack developer with 18+ years of
+                            experience developing web applications. I strive to
+                            find ideal customized solutions for enterprise
+                            problems.
+                        </p>
+                        <br />
+                        <p>
+                            I lead and enable engineering teams. I work hands-on
+                            coding/designing, as well as offering guidance and
+                            coaching. I love collaboration, curiosity, and
+                            communication.
+                        </p>
+                        <br />
+                        <p>
+                            I manage applications from infrastructure to code,
+                            including the build pipeline and testing. In my
+                            effort to build quality performant systems that
+                            scale, I use best-practice design patterns,
+                            object-oriented programming principles, and strive
+                            for well documented readable code.
+                        </p>
+                    </li>
                     {displayItems.map(function (item, index) {
                         return (
                             <li
@@ -269,7 +282,7 @@ export default function () {
                                                             >
                                                                 <button
                                                                     type="button"
-                                                                    className="btn btn-xs btn-success"
+                                                                    className="btn btn-success"
                                                                 >
                                                                     {tech}
                                                                 </button>

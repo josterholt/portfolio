@@ -1,0 +1,9 @@
+[build]
+
+[[redirects]]
+    from = "/linkedin"
+    to = "https://www.linkedin.com/in/justinosterholt"
+
+[[redirects]]
+    from = "/github"
+    to = "https://github.com/josterholt"
